@@ -1,0 +1,112 @@
+{
+  "id": "97fc1f67-9425-4fb7-8350-d19b003930f1",
+  "version": "2.0",
+  "name": "Campus Digital",
+  "url": "http://campusdigital.poa.ifrs.edu.br:8080",
+  "tests": [{
+    "id": "da23be4f-c0ec-45db-b3e1-5806d9be11a7",
+    "name": "rodando o formulârio",
+    "commands": [{
+      "id": "ea730c60-e2eb-4d58-b25d-88e498e74622",
+      "comment": "",
+      "command": "open",
+      "target": "/public/login/index.xhtml?windowId=7f7",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fcb6fa34-4742-432e-8916-d853aad8c8ed",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "800x576",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1c151c63-6eea-4063-8ad2-e5b569d25b98",
+      "comment": "",
+      "command": "type",
+      "target": "id=authentication:username",
+      "targets": [
+        ["id=authentication:username", "id"],
+        ["name=authentication:username", "name"],
+        ["css=#authentication\\3Ausername", "css:finder"],
+        ["xpath=//input[@id='authentication:username']", "xpath:attributes"],
+        ["xpath=//form[@id='authentication']/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "0760170"
+    }, {
+      "id": "2fbc9b7a-b9b4-4c2b-9a29-7b702f9ddc6d",
+      "comment": "",
+      "command": "type",
+      "target": "id=authentication:password",
+      "targets": [
+        ["id=authentication:password", "id"],
+        ["name=authentication:password", "name"],
+        ["css=#authentication\\3Apassword", "css:finder"],
+        ["xpath=//input[@id='authentication:password']", "xpath:attributes"],
+        ["xpath=//form[@id='authentication']/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "franktom"
+    }, {
+      "id": "51f98163-5afd-4f64-8670-fd3e82fee827",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=authentication:password",
+      "targets": [
+        ["id=authentication:password", "id"],
+        ["name=authentication:password", "name"],
+        ["css=#authentication\\3Apassword", "css:finder"],
+        ["xpath=//input[@id='authentication:password']", "xpath:attributes"],
+        ["xpath=//form[@id='authentication']/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "736aa0d1-c787-46d7-878e-0734c2849cbd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ui-state-hover > .ui-menuitem-text",
+      "targets": [
+        ["css=.ui-state-hover > .ui-menuitem-text", "css:finder"],
+        ["xpath=//div[@id='j_idt62:mainMenu']/ul/li/a/span", "xpath:idRelative"],
+        ["xpath=//a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Acadêmico/SCA')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e721b181-7076-4f38-bc5e-1120c81334a4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ui-state-hover > .ui-menuitem-text",
+      "targets": [
+        ["css=.ui-state-hover > .ui-menuitem-text", "css:finder"],
+        ["xpath=//div[@id='j_idt62:mainMenu']/ul/li/a/span", "xpath:idRelative"],
+        ["xpath=//a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Acadêmico/SCA')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b078d38c-b1ab-4ee6-a786-9ff47608de8f",
+      "comment": "",
+      "command": "click",
+      "target": "css=a > .bright_blue",
+      "targets": [
+        ["css=a > .bright_blue", "css:finder"],
+        ["xpath=//div[@id='logoutMenu']/a/div[2]", "xpath:idRelative"],
+        ["xpath=//a/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "8dacf732-6379-41d2-8e6d-792369373f4a",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["da23be4f-c0ec-45db-b3e1-5806d9be11a7"]
+  }],
+  "urls": ["http://campusdigital.poa.ifrs.edu.br:8080/"],
+  "plugins": []
+}
